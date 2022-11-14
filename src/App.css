@@ -1,0 +1,137 @@
+body {
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #4e0a2c;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
+  width: 90%;
+  position: relative;
+}
+
+.form{
+  background-color: rgb(255, 255, 255, 0.4);
+  margin: 50px 30px 0 0;
+  height: fit-content;
+  width: 20%;
+  padding: 50px;
+  position: fixed;
+  left: 65%;
+  box-shadow: 0px 0px 4px 1px antiquewhite;
+}
+
+@media(max-width:480px){
+  .form{
+    width: 60%;
+    padding: 10px 50px;
+    background-color: #834765;
+    top:18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 4px 3px lightcoral;
+  }
+}
+ 
+h1 {
+  margin: 0;
+ }
+
+.inputs{
+  width: 100%;
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(235, 170, 170);
+}
+
+label {
+font-size: 20px;
+ }
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(84, 173, 84);
+  margin: 5px;
+}
+
+.form button:hover{
+  box-shadow: 0px 0px 4px 1px antiquewhite;
+}
+
+.list {
+  width: 50%;
+  position: relative;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width:480px){
+  .list{
+    width: 90%;
+    position: relative;
+    top: 50%;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+li {
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 60%;
+  margin: 20px 0;
+  padding: 10px 30px;
+  list-style: none;
+  box-shadow: 0px 0px 4px 1px antiquewhite;
+}
+
+li p {
+  font-size: 20px;
+  margin: 10px;
+}
+
+li b {
+  font-size: 20px;
+}
+
+.btn-select{
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(84, 173, 84);
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn-select:hover{
+  box-shadow: 0px 0px 4px 1px antiquewhite;
+}
+
+.btn-delete{
+  border-radius: 20px;
+  border: none;
+  background-color: lightcoral;
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn-delete:hover{
+  box-shadow: 0px 0px 4px 1px antiquewhite;
+}
